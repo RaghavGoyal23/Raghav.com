@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#testim">Testimonials</a>
+          <a href="#about">About Me</a>
+        </div>
+    </nav>
+    <div class="container" id="home">
+          <div class="main-text"><h1><span>Creative</span></h1>
+          </div>
+      
+      <div class="main-img">
+          <img src="assets/image.png" alt="">
+      </div>
+      <div class="cta-btn">
+          <button onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">Explore my work</button>
+      </div>
+      </div>
+    <!-- <header>
+        <div class="welcome">Welcome</div>
+        <div class="horizontal-line"></div>
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> About</a></li>
+            </ul>
+            <button class="contact-btn"><i class="fas fa-envelope"></i> Contact Us</button>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="linear-gradient"></div>
+        <div class="hero-text">
+            <h1><span>About Me</span></h1>
+            <div class="text">
+                <h2><span>I'm a</span></h2>
+                <div class="typing-container"><span id="typing"></span></div>
+            </div>
+            <div class="about">
+                <i class="fas fa-quote-left" style="color: #b671ff; margin-right: 10px;"></i>
+                Hi! I'm Raghav and I love to make cool design stuffs. I specialize in making manipulation posters, typography design, and YouTube thumbnails.
+                I am also passionate about designing UI/UX. Basically, I am your one-step solution for all your design needs.
+                You can check out my portfolio below on the website.
+                <i class="fas fa-quote-right" style="color: #b671ff; margin-left: 10px;"></i>
+            </div>
+            <button class="services-btn">
+                <i class="fas fa-rocket"></i> Explore My Work
+                <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+            </button>
+            <div class="social-links" style="margin-top: 30px;">
+                <a href="#" style="color: #b671ff; margin-right: 20px; font-size: 24px;"><i class="fab fa-github"></i></a>
+                <a href="#" style="color: #b671ff; margin-right: 20px; font-size: 24px;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: #b671ff; margin-right: 20px; font-size: 24px;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: #b671ff; font-size: 24px;"><i class="fab fa-behance"></i></a>
+            </div>
+        <!-- </div>
+        <div class="hero-image">
+            <img src="assets/new_pic_for_website_without_bg.png" alt="Person pointing">
+            <div class="floating-elements">
+                <div class="floating-icon" style="position: absolute; top: 20%; left: -50px; animation: float 3s ease-in-out infinite;">
+                    <i class="fas fa-paint-brush" style="color: #b671ff; font-size: 24px;"></i>
+                </div>
+                <div class="floating-icon" style="position: absolute; top: 40%; right: -30px; animation: float 4s ease-in-out infinite;">
+                    <i class="fas fa-code" style="color: #d8b4fe; font-size: 24px;"></i>
+                </div>
+                <div class="floating-icon" style="position: absolute; bottom: 30%; left: -40px; animation: float 5s ease-in-out infinite;">
+                    <i class="fas fa-camera" style="color: #b671ff; font-size: 24px;"></i>
+                </div>
+            </div>
+        </div>
+    </section> --> 
+    <div class="horizontal-line"></div>
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        
+        <!-- Poster Designs Slider -->
+        <div class="portfolio-category">
+            <h3>Poster Designs</h3>
+            <div class="slider-container">
+                <button class="arrow prev" onclick="moveSlide('posters', -1)"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider" id="posters-slider">
+                    <div class="slide"><img src="assets/poster/samosa'.png" alt="Dior Poster"></div>
+                    <div class="slide"><img src="assets/poster/nike.png" alt="Dior Poster"></div>
+                    <div class="slide"><img src="assets/poster/frooti.png" alt="Dior Poster"></div>
+                    <div class="slide"><img src="assets/poster/dior.png" alt="Dior Poster"></div>
+                    <div class="slide"><img src="assets/poster/bmw.png" alt="Dior Poster"></div>
+                    <div class="slide"><img src="assets/poster/woodland shoe manipulation.png" alt="Dior Poster"></div>
+                    <div class="slide"><img src="assets/poster/rolex manipulation.png" alt="Rolex Poster"></div>
+                    <div class="slide"><img src="assets/poster/new one.png" alt="Rolex Poster"></div>
+                    <div class="slide"><img src="assets/poster/sony.png" alt="Sony Poster"></div>
+                </div>
+                <button class="arrow next" onclick="moveSlide('posters', 1)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Digital Arts Slider -->
+        <div class="portfolio-category">
+            <h3>Digital Arts</h3>
+            <div class="slider-container">
+                <button class="arrow prev" onclick="moveSlide('digital-arts', -1)"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider" id="digital-arts-slider">
+                    <div class="slide"><img src="assets/digital_art/red_bull poster.png" alt="Woodland Art"></div>
+                    <div class="slide"><img src="assets/digital_art/tesla manipulation.png" alt="Digital Art"></div>
+                    <div class="slide"><img src="assets/digital_art/apple juice manipulation (2).png" alt="Witcher Art"></div>
+                    <div class="slide"><img src="assets/digital_art/jovyn-chamb-iWMfiInivp4-unsplash.png" alt="Witcher Art"></div>
+                    <div class="slide"><img src="assets/digital_art/NIKE.png" alt="Witcher Art"></div>
+                </div>
+                <button class="arrow next" onclick="moveSlide('digital-arts', 1)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Thumbnails Slider -->
+        <div class="portfolio-category">
+            <h3>YouTube Thumbnails</h3>
+            <div class="slider-container">
+                <button class="arrow prev" onclick="moveSlide('thumbnails', -1)"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider" id="thumbnails-slider">
+                    <div class="slide"><img src="assets/thumbnail/video_1/variation_1.png" alt="Tesla Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_5/variation_1.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_5/variation_2.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_1/variation_2.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_1/variation_3.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_2/variation_1.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_2/variation_2.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_3/variation_1'.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_3/variation_2'.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_4/variation_1.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_4/variation_2.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_6/variation_1_updated.png" alt="Red Bull Thumbnail"></div>
+                    <div class="slide"><img src="assets/thumbnail/video_6/variation_2.png" alt="Red Bull Thumbnail"></div>
+                </div>
+                <button class="arrow next" onclick="moveSlide('thumbnails', 1)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const sliderIndices = {
+            'posters': 0,
+            'digital-arts': 0,
+            'thumbnails': 0
+        };
+
+        function moveSlide(category, step) {
+            const slider = document.getElementById(`${category}-slider`);
+            const slides = slider.querySelectorAll('.slide');
+            const prevButton = slider.parentElement.querySelector('.prev');
+            const nextButton = slider.parentElement.querySelector('.next');
+            
+            // Get the width of a single slide including its gap
+            const slideWidth = slides[0].offsetWidth + 20; // 20px for gap
+            
+            // Calculate how many slides are visible
+            const containerWidth = slider.parentElement.offsetWidth - 80; // Account for padding
+            const visibleSlides = Math.floor(containerWidth / slideWidth);
+            
+            // Calculate maximum index
+            const maxIndex = Math.max(0, slides.length - visibleSlides);
+            
+            // Update the index
+            sliderIndices[category] = Math.min(Math.max(sliderIndices[category] + step, 0), maxIndex);
+            
+            // Apply the transform
+            slider.style.transform = `translateX(-${sliderIndices[category] * slideWidth}px)`;
+            
+            // Update button states
+            prevButton.disabled = sliderIndices[category] === 0;
+            nextButton.disabled = sliderIndices[category] === maxIndex;
+        }
+
+        // Initialize sliders
+        document.addEventListener('DOMContentLoaded', () => {
+            const categories = ['posters', 'digital-arts', 'thumbnails'];
+            categories.forEach(category => {
+                moveSlide(category, 0); // Initialize each slider
+            });
+        });
+    </script>
+    <div class="horizontal-line"></div>
+    <section class="testimonials" id="testim">
+        <h2>What Clients Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    "Working with Raghav was an absolute pleasure. His attention to detail and creative approach to design helped bring our vision to life. The final product exceeded our expectations!"
+                </div>
+                <div class="testimonial-author">
+                    <!-- <img src="assets/client1.jpg" alt="Client 1" class="author-image"> -->
+                    <div class="author-info">
+                        <h4>Dr. Kara Consigli</h4>
+                        <p>Mystical Entreprenaur</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    "Raghav's graphic design skills are exceptional. He created stunning visuals that perfectly captured our brand's essence. His professionalism and timely delivery made the collaboration seamless."
+                </div>
+                <div class="testimonial-author">
+                    <!-- <img src="assets/client2.jpg" alt="Client 2" class="author-image"> -->
+                    <div class="author-info">
+                        <h4>Sam Franklin</h4>
+                        <p>Intuitive Coach</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    "The Thumbnail designs Raghav created for our Agency were attention grabbing. His understanding of user psychology and modern design trends made all the difference in our Agency's success."
+                </div>
+                <div class="testimonial-author">
+                    <!-- <img src="assets/client3.jpg" alt="Client 3" class="author-image"> -->
+                    <div class="author-info">
+                        <h4>Rohan Wayankar</h4>
+                        <p>Agency Owner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-nav">
+            <button class="testimonial-arrow prev" onclick="scrollTestimonials('left')">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="testimonial-arrow next" onclick="scrollTestimonials('right')">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+    <script>
+        function scrollTestimonials(direction) {
+            const container = document.querySelector('.testimonials-container');
+            const scrollAmount = 380; // card width + gap
+            if (direction === 'left') {
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+            <!-- <script>
+                const texts = ["Web Developer", "Graphic Designer", "Freelancer"];
+                let textIndex = 0;
+                let charIndex = 0;
+                let isDeleting = false;
+                const speed = 100;
+                const delay = 1000;
+                
+                function typeEffect() {
+                    const currentText = texts[textIndex];
+                    
+                    if (isDeleting) {
+                        charIndex--;
+                    } else {
+                        charIndex++;
+                    }
+                    
+                    document.getElementById("typing").textContent = currentText.substring(0, charIndex);
+                    
+                    if (!isDeleting && charIndex === currentText.length) {
+                        setTimeout(() => isDeleting = true, delay);
+                    } else if (isDeleting && charIndex === 0) {
+                        isDeleting = false;
+                        textIndex = (textIndex + 1) % texts.length;
+                    }
+                    
+                    setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
+                }
+                
+                document.addEventListener("DOMContentLoaded", () => setTimeout(typeEffect, speed));
+            </script> -->
+    <section class="aboutme-section" id="about">
+        <div class="aboutme-container">
+            <div class="aboutme-image">
+                <img src="assets/website_pic.png" alt="Raghav's workspace">
+            </div>
+            <div class="aboutme-content">
+                <h2>About Me</h2>
+                <p>I'm a passionate graphic and Motion Designer with a keen eye for detail and creativity.</p>
+                <p>With over 2 years of experience in digital design, I specialize in creating visually stunning manipulations, typography designs, and  Thumbnails. My work is characterized by attention to detail, innovative approaches, and a commitment to exceeding client expectations.</p>
+                <p>I believe that great design should be both aesthetically pleasing and functionally effective. Every project I take on is approached with this philosophy, resulting in work that not only looks impressive but also fulfills its intended purpose.</p>
+                <div class="aboutme-cards">
+                    <div class="aboutme-card">
+                        <h3 class="aboutme-card-title skills-title">Skills</h3>
+                        <ul>
+                            <li>Adobe Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Web Design</li>
+                            <li>Typography</li>
+                            <li>Image Manipulation</li>
+                        </ul>
+                    </div>
+                    <div class="aboutme-card">
+                        <h3 class="aboutme-card-title education-title">Education</h3>
+                        <ul>
+                            <li>Self taught Graphic Designer</li>
+                            <li>Currently doing Bachelors of Technology in Computer Science and Engineering from IIIT Sonepat</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">
+                    <span class="footer-logo-icon">R</span>
+                    <span class="footer-logo-text">Raghav</span>
+                </div>
+                <div class="footer-desc">Creating impressive designs and digital experiences.</div>
+                <div class="footer-socials">
+                    <!-- <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://www.linkedin.com/in/raghav-goyal-126482351/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/raghavvv.design/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col footer-links">
+                <div class="footer-title">Quick Links</div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testim">Testimonials</a></li>
+                    <!-- <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <div class="footer-title">Contact Me</div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <!-- <a href="mailto:raghavgoyal572@gmail.com" onclick="window.location.href='mailto:raghavgoyal572@gmail.com'; return true;" class="footer-email">raghavgoyal572@gmail.com</a>-->
+                    <a href="https://mail.google.com/mail/?view=cm&to=raghavgoyal572@gmail.com" target="_blank" class="footer-email">
+                        raghavgoyal572@gmail.com
+                      </a>
+                      
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">© 2025 Raghav's Portfolio. All rights reserved.</div>
+            <div class="footer-policies">
+                <!-- <a href="#">Privacy Policy</a> -->
+                <!-- <a href="#">Terms of Service</a> -->
+            </div>
+    </div>
+        <button class="footer-scrolltop" onclick="window.scrollTo({top:0,behavior:'smooth'});" aria-label="Scroll to top">
+            <span>↑</span>
+        </button>
+    </footer>
+</body>
+</html>
+
